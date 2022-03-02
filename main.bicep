@@ -1,8 +1,9 @@
 @maxLength(11)
-param storageAccountPrefix string = 'bicep'
+param storageAccountPrefix string = 'st'
+param storageAccountName string = 'biceptest001'
 
 
-var sta = '${storageAccountPrefix}${uniqueString(subscription().id)}'
+var sta = '${storageAccountPrefix}${storageAccountName}'
 
 resource storageaccount 'Microsoft.Storage/storageAccounts@2021-02-01' = {
   name: sta
