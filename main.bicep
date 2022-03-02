@@ -1,6 +1,6 @@
 @maxLength(11)
 param storageAccountPrefix string = 'st'
-param storageAccountName string = 'biceptest001'
+param storageAccountName string = 'biceptest002'
 
 
 var sta = '${storageAccountPrefix}${storageAccountName}'
