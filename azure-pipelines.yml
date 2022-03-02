@@ -23,3 +23,9 @@ stages:
         scriptType: 'pscore'
         scriptLocation: 'inlineScript'
         inlineScript: 'az bicep build --file main.bicep'
+    - task: PublishBuildArtifacts@1
+      inputs:
+        PathtoPublish: '$(Build.SourcesDirectory)/main.json'
+        ArtifactName: 'finishedTemplate'
+        publishLocation: 'Container'
+    
