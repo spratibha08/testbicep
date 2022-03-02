@@ -6,7 +6,7 @@ trigger:
 variables:
   resourceGroupName: 'rg-pcme'
   location: 'westeurope'
-  azureSubscription: 'AzureConnection'
+  azureSubscription: 'test-service-conn-bicep-test'
   resourcePrefix: 'bicep'
 
 pool:
