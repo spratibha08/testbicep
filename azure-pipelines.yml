@@ -17,9 +17,9 @@ stages:
   jobs:
   - job: Build
     steps:
-- task: AzureCLI@2
-  inputs:
-    azureSubscription: 'test-service-conn-bicep-test'
-    scriptType: 'pscore'
-    scriptLocation: 'inlineScript'
-    inlineScript: 'az bicep build --file main.bicep'
+    - task: AzureCLI@2
+      inputs:
+        azureSubscription: 'test-service-conn-bicep-test'
+        scriptType: 'pscore'
+        scriptLocation: 'inlineScript'
+        inlineScript: 'az bicep build --file main.bicep'
